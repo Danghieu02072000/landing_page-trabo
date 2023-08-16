@@ -8,7 +8,7 @@
         @apply text-base font-default 
     }
     h1 {
-        @apply text-7xl text-heading
+        @apply text-5xl xs:text-6xl text-heading lg:text-7xl
     }
     h2 {
         @apply text-custom text-heading font-default
