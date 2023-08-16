@@ -661,6 +661,10 @@ h2 {
   top: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -673,6 +677,14 @@ h2 {
   grid-column: span 1 / span 1;
 }
 
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -682,12 +694,24 @@ h2 {
   margin-bottom: 2.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 
 .mt-40 {
@@ -726,12 +750,20 @@ h2 {
   width: 100%;
 }
 
+.max-w-\[175px\] {
+  max-width: 175px;
+}
+
 .max-w-\[490px\] {
   max-width: 490px;
 }
 
 .max-w-\[537px\] {
   max-width: 537px;
+}
+
+.max-w-\[65\%\] {
+  max-width: 65%;
 }
 
 .max-w-\[95\%\] {
@@ -746,12 +778,28 @@ h2 {
   max-width: 1192px;
 }
 
+.max-w-\[170px\] {
+  max-width: 170px;
+}
+
+.max-w-\[240px\] {
+  max-width: 240px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-9 {
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -770,6 +818,10 @@ h2 {
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -784,10 +836,6 @@ h2 {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
 }
 
 .gap-16 {
@@ -810,9 +858,17 @@ h2 {
   gap: 2.25rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-x-14 {
   -moz-column-gap: 3.5rem;
        column-gap: 3.5rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
 }
 
 .gap-y-8 {
@@ -889,6 +945,10 @@ h2 {
   padding-bottom: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-date {
   font-family: Inter, sans-serif;
 }
@@ -900,6 +960,11 @@ h2 {
 .text-2xl {
   font-size: 24px;
   line-height: 32px;
+}
+
+.text-5xl {
+  font-size: 48px;
+  line-height: 54px;
 }
 
 .text-base {
@@ -946,6 +1011,11 @@ h2 {
   line-height: 2rem;
 }
 
+.text-heading {
+  --tw-text-opacity: 1;
+  color: rgb(31 51 71 / var(--tw-text-opacity));
+}
+
 .text-heading-2 {
   --tw-text-opacity: 1;
   color: rgb(38 62 86 / var(--tw-text-opacity));
@@ -964,6 +1034,11 @@ h2 {
 .text-text {
   --tw-text-opacity: 1;
   color: rgb(119 119 129 / var(--tw-text-opacity));
+}
+
+.text-text-2 {
+  --tw-text-opacity: 1;
+  color: rgb(101 114 128 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1063,6 +1138,10 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1071,21 +1150,20 @@ h2 {
     display: none;
   }
 
+  .md\:max-w-\[40\%\] {
+    max-width: 40%;
+  }
+
+  .md\:max-w-\[175px\] {
+    max-width: 175px;
+  }
+
+  .md\:grid-cols-9 {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
-  .md\:gap-14 {
-    gap: 3.5rem;
-  }
-
-  .md\:gap-x-14 {
-    -moz-column-gap: 3.5rem;
-         column-gap: 3.5rem;
   }
 
   .md\:shadow-sm {
@@ -1110,7 +1188,36 @@ h2 {
     grid-column: span 1 / span 1;
   }
 
+  .xl\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .xl\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:max-w-\[170px\] {
+    max-width: 170px;
+  }
+
+  .xl\:max-w-\[240px\] {
+    max-width: 240px;
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:text-start {
+    text-align: start;
   }
 }

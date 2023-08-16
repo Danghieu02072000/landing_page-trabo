@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="max-w-xl mx-auto">
-        <header class="container">
+        <header class="container mb-24">
             <nav class=" gap-4 fixed top-0 left-0 right-0 w-full z-20 shadow-md md:shadow-sm bg-white">
                 <div class="container flex justify-between">
                     <div class="flex gap-2 items-center justify-center py-4">
@@ -36,7 +36,7 @@
                 </div>
 
             </nav>
-            <div class=" absolute top-0 left-0 w-full h-[100vh] z-10 bg-backgroud flex justify-start items-center flex-col gap-10 xs:gap-20 show transition-all duration-500 md:hidden" id="mobie_menu">
+            <div class=" fixed top-0 left-0 w-full h-[100vh] z-10 bottom-0 bg-backgroud flex justify-center items-center flex-col gap-10 xs:gap-20 show transition-all duration-500 md:hidden" id="mobie_menu">
                 <ul class="flex gap-10 xs:gap-16 flex-col justify-center items-center">
                     <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Home</a></li>
                     <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">About</a></li>
@@ -69,7 +69,6 @@
                         <span class="font-xl mb-4 text-heading-2 font-date font-medium">Date</span>
                         <div class=" flex gap-1 shadow-md items-center p-1">
                             <input type="date" name="" id="" placeholder="" class="placeholder:text-sm placeholder:text-plahoder text-sm outline-none flex-1">
-                            <!-- <img src="../src/img/icon_2.png" alt=""> -->
                         </div>
                     </div>
                     <div class=" ">
@@ -89,7 +88,31 @@
                 </div>
             </section>
         </header>
-        <main></main>
+        <main>
+            <section class="container">
+                <div class="grid grid-cols-3 md:grid-cols-9 gap-10 gap-y-14 ">
+                    <div class="col-span-3 md:col-span-9 xl:col-span-3 text-center xl:text-start ">
+                        <h2 class="text-5xl text-heading font-semibold xl:max-w-[170px] mb-4">How It Works</h2>
+                        <p class="text-base text-text font-medium max-w-[65%] md:max-w-[40%] xl:max-w-[240px] mx-auto xl:mx-0 mb-10">Apply here for a monthly subscription to Globetrotter, which is issued once a month.</p>
+                    </div>
+                    <div class="col-span-3 xl:col-span-2 flex xl:block flex-col justify-end items-center text-center xl:text-start">
+                        <img src="../src/img/img_intro1.png" alt="" class="mb-9">
+                        <span class="text-2xl text-heading font-semibold mb-3">Sign Up</span>
+                        <p class="text-text-2 text-sm max-w-full md:max-w-[175px] font-normal">Employees set their per paycheck contribution</p>
+                    </div>
+                    <div class="col-span-3 xl:col-span-2 flex xl:block flex-col justify-end items-center text-center xl:text-start">
+                        <img src="../src/img/img_intro2.png" alt="" class="mb-9">
+                        <span class="text-2xl text-heading font-semibold mb-3">Contribute</span>
+                        <p class="text-text-2 text-sm max-w-full md:max-w-[175px] font-normal">Employers make a matching contribution</p>
+                    </div>
+                    <div class="col-span-3 xl:col-span-2 flex xl:block flex-col justify-end items-center text-center xl:text-start">
+                        <img src="../src/img/img_intro1.png" alt="" class="mb-9">
+                        <span class="text-2xl text-heading font-semibold mb-3">Travel</span>
+                        <p class="text-text-2 text-sm max-w-full  font-normal">Employees book their travel & vacation with their Taab card</p>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
     </div>
     <script src="../src/js/main.js"></script>
