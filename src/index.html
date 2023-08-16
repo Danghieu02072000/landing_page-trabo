@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <h2>Hello</h2>
+    <div class="max-w-xl mx-auto">
+        <header class="container">
+            <nav class=" gap-4 fixed top-0 left-0 right-0 w-full z-20 shadow-md md:shadow-sm bg-white">
+                <div class="container flex justify-between">
+                    <div class="flex gap-2 items-center justify-center py-4">
+                        <img src="../src/img/logo.png" alt="">
+                        <img src="../src/img/Trabo.png" alt="">
+                    </div>
+                    <div class="flex items-center justify-center md:hidden " id="btn_menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hidden" id="btn_close">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>                          
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8" id="btn_show">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                    <div class="hidden md:flex gap-9 lg:gap-11 justify-center items-center py-6">
+                        <ul class="flex gap-8 lg:gap-10">
+                                <li><a href="#" class="text-nav text-sm font-semibold">Home</a></li>
+                                <li><a href="#" class="text-nav text-sm font-semibold">About</a></li>
+                                <li><a href="#" class="text-nav text-sm font-semibold">Destinations</a></li>
+                                <li><a href="#" class="text-nav text-sm font-semibold">Tours</a></li>
+                                <li><a href="#" class="text-nav text-sm font-semibold">Blog</a></li>
+                        </ul>
+                        <a href="#" class="py-3 px-8 bg-primary rounded-lg text-sm text-white font-medium">Contact Us</a>
+                    </div>
+                </div>
+
+            </nav>
+            <div class=" absolute top-0 left-0 w-full h-[100vh] z-10 bg-backgroud flex justify-center items-center flex-col gap-10 xs:gap-20 show transition-all duration-500 md:hidden" id="mobie_menu">
+                <ul class="flex gap-10 xs:gap-16 flex-col justify-center items-center">
+                    <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Home</a></li>
+                    <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">About</a></li>
+                    <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Destinations</a></li>
+                    <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Tours</a></li>
+                    <li><a href="#" class="text-nav text-2xl xs:text-3xl font-bold">Blog</a></li>
+                </ul>
+                <a href="#" class="py-4 px-10 xs:py-6 xs:px-14 bg-primary rounded-lg text-xl xs:text-2xl text-white font-medium">Contact Us</a>
+            </div>
+        </header>
+        <main></main>
+        <footer></footer>
+    </div>
+    <script src="../src/js/main.js"></script>
 </body>
 </html>

@@ -13,4 +13,12 @@
     h2 {
         @apply text-custom text-heading font-default
     }
+    
+}
+@layer components {
+    .show {
+        transform: translateY(-30%);
+        opacity: 0;
+        visibility: hidden;
+    }
 }
