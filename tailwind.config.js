@@ -27,7 +27,8 @@ module.exports = {
       '4xl':['36px', { lineHeight: '40px'}],
       '5xl':['48px', { lineHeight: '54px'}],
       '6xl':['52px', { lineHeight: '58px'}],
-      '7xl':['62px', { lineHeight: '68px'}]
+      '7xl':['62px', { lineHeight: '68px'}],
+      'custom': ['44px', { lineHeight: '58px'}],
     },
     container : {
       center : true,
@@ -38,12 +39,25 @@ module.exports = {
       }
     },
     fontFamily : {
-      default : ['Inter','sans-serif'],
-      highlights: ['Seaweed Script','cursive']
+      default : ['Poppins','sans-serif'],
+      heading: ['Sora','sans-seri'],
+      date : ['Inter','sans-serif']
     },
     extend: {
       colors : {
-        
+        primary: '#6347F9',
+        backgroud: '#FFF4F4',
+        white : '#fff',
+        black: '#000',
+        text: '#777781',
+        'text-2': '#657280',
+        heading: '#1F3347',
+        'heading-2':'#263E56',
+        'heading-3': '#304050',
+        'nav': '#354657',
+        'hover-nav': '#23364A',
+        'date': '#7D7E87',
+        'plahoder': '#B7B9BC',
       },
       maxWidth : {
         md: '704px',
