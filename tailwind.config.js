@@ -40,7 +40,7 @@ module.exports = {
     },
     fontFamily : {
       default : ['Poppins','sans-serif'],
-      heading: ['Sora','sans-seri'],
+      'h1': ['Sora','sans-seri'],
       date : ['Inter','sans-serif']
     },
     extend: {
