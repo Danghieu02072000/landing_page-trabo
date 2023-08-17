@@ -73,6 +73,10 @@
         gap:25px;
         bottom: unset;
     }
+    .slider_custom .owl-nav {
+        top:unset;
+        bottom:-10%;
+    }
     @media screen and (max-width: 640px) {
         .owl-nav {
             position: absolute;
@@ -82,5 +86,9 @@
             display: flex;
             gap:25px;
         }
-    }
+        .slider_custom .owl-nav {
+            top:unset;
+            bottom:-20%;
+        }
+     }
 }
