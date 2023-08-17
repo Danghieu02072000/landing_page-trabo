@@ -877,6 +877,10 @@ h2 {
   margin-top: auto;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -1017,6 +1021,10 @@ h2 {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1223,6 +1231,11 @@ h2 {
   padding-bottom: 0.875rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1245,6 +1258,14 @@ h2 {
 
 .pr-5 {
   padding-right: 1.25rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -1328,6 +1349,10 @@ h2 {
   font-weight: 600;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .leading-5 {
   line-height: 1.25rem;
 }
@@ -1392,6 +1417,15 @@ h2 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#9A9FA5\] {
+  --tw-text-opacity: 1;
+  color: rgb(154 159 165 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1583,6 +1617,10 @@ h2 {
 
   .md\:grid-cols-9 {
     grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
