@@ -9,3 +9,20 @@ BTN_MENU.onclick = function() {
     MOBIE_MENU.classList.toggle('show')
     BTN_MENU.classList.toggle('close')
 }
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:30,
+    nav:true,
+    autoHeight: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1024:{
+            items:3
+        }
+    }
+})
